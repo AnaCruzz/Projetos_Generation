@@ -11,8 +11,11 @@ public class exercicio5 {
 			do {
 				System.out.println(" Digite um Numero");
 				numero =ler.nextInt();
-				 if (numero>=1) {
+				 if (numero>=1 && numero<=9) {
 					 somaNumeros=somaNumeros+numero;
+					 
+				 } else {
+					 System.out.println(" Número invalido");
 				 }
 			} while (numero!=0);
 			
