@@ -1,0 +1,42 @@
+-- create database petshop -- // cria o database petshop
+
+-- use petshop; -- // comando para utilizar o database petshop
+-- create table cadastro ( -- // criando a tabela cadastro
+	-- id int(5) auto_increment, 		-- //matricula do pet
+    -- nome varchar(30),				-- // nome do pet
+    -- peso int(5),					-- // peso do pet
+    -- animal varchar(10),				-- // tipo de animal, exe: cachorro, gato, vaca, cavalo
+    -- porte varchar(20),				-- // tamanho do animal, grande, pequeno, médio.
+    -- primary key(id)					-- // chave primaria determinando que id é a chave primaria do aluno
+-- ); -- fim do comando para criar a tabela
+
+-- select*from cadastro -- para visualizar a tabela recem criada.
+
+/* insert into cadastro (nome, peso, animal, porte) values ("Neil Armistrong", 6, "cachorro", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Killer", 20, "cachorro", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Bolinha", 10, "cachorro", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Kiko", 18, "cachorro", "médio");
+insert into cadastro (nome, peso, animal, porte) values ("Jeremias", 18, "cachorro", "médio");
+insert into cadastro (nome, peso, animal, porte) values ("Musarela", 10 , "gato", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Kira", 5, "cachorro", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Valdomiro", 30, "cachorro", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Estrela", 120, "vaca", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Ventania", 130, "cavalo", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Zeus", 150, "cavalo", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Nina", 9, "cachorro", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Gordo", 14, "cachorro", "médio");
+insert into cadastro (nome, peso, animal, porte) values ("Vitorio", 5, "gato", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Mimosa", 350, "vaca", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Miau", 4, "gato", "pequeno");
+insert into cadastro (nome, peso, animal, porte) values ("Paçoca", 32, "cachorro", "grande");
+insert into cadastro (nome, peso, animal, porte) values ("Fifi", 6, "cachorro", "pequeno"); */
+
+-- Mateus salvou minha vida e me ensinou a comentar com esses trequinhos <3
+
+-- select*from cadastro where nome like 'B%'; -- select que retorna os animais cujo nome começa com B
+-- select*from cadastro where peso>20; -- select que retorna os animais com peso maior que 20
+
+-- select*from cadastro -- para identificar qual dado desejo deletar, no caso é o id 1 (duplicado).
+-- delete from cadastro where id = 1;
+
+-- update cadastro set porte = "p" where id = 2; -- atualizar porte do id 2 de m para p

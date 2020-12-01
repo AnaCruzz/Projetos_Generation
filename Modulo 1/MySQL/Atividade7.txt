@@ -1,0 +1,48 @@
+-- create database blockbuster -- // cria o database 
+
+/* use blockbuster; -- // comando para utilizar o database petshop
+create table filmes ( -- // criando a tabela cadastro
+	id int(5) auto_increment, 		-- //matricula do filme
+	nome varchar(100),				-- // nome do filme
+    genero varchar(20),				-- // genero do filme, exemplo drama, terror, comedia
+    ano int(4),						-- // ano de lançamento
+    duracao int(5),					-- // duraçao do filme em minutos
+    primary key(id)					-- // chave primaria determinando que id é a chave primaria do aluno
+); */
+
+-- select*from filmes -- para visualizar a tabela recem criada.
+
+/*insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 1", "aventura", 2001, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 2", "aventura",  2002, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 3", "aventura", 2004, 100);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 4", "aventura", 2005, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 5", "aventura",  2007, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 6", "aventura",  2009, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 7", "aventura",  2010, 100);
+insert into filmes (nome, genero, ano, duracao) values ("Harry Potter 8", "aventura",  2011, 100);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 1", "Ação", 2001, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 2", "Ação", 2003, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 3", "Ação", 2006, 120);
+insert into filmes (nome, genero, ano, duracao) values (""Velozes e Furiosos 4", "Ação", 2009, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 5", "Ação", 2009, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 6", "Ação", 2011, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 7", "Ação", 2013, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 8", "Ação", 2015, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 9", "Ação", 2017, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Velozes e Furiosos 10", "Ação", 2019, 120);
+insert into filmes (nome, genero, ano, duracao) values ("Sexto Sentido", "suspense", 1996, 110);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 1", "terror", 1984, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 2", "terror", 1992, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 3", "terror", 1995, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 4", "terror", 1996, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 5", "terror", 1998, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 6", "terror", 1999, 90);
+insert into filmes (nome, genero, ano, duracao) values ("Colheita Maldita 7", "terror", 2001, 90); */
+
+-- select*from filmes where nome like 'S%'; -- select que retorna os filmes cujo nome começa com S
+-- select*from filmes where genero = "comedia romantica"; -- select que retorna os filmes cuja categoria é comedia romantica
+
+-- select*from filmes -- para identificar qual dado desejo deletar, no caso é o id 10 (filme o grito).
+-- delete from filmes where id = 10;
+
+-- update filmes set duracao = 98 where id = 6; -- atualizar duracao do id 6 de 90 para 98

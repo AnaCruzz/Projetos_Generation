@@ -1,0 +1,35 @@
+ create database lojamoto; -- //cria o banco de dados
+
+
+create table produtos( 		-- // cria a tabela com os 5 atributos
+	 id int(4) auto_increment,  -- // id para identificar a ordem do produto na tabela
+     marca varchar(30), 		-- // marca do produto, ex: Harley Davison, Ducati, Triump..
+     tipo varchar(30),		-- // tipo do produto, exemplo: Custom, Esportiva, Big Trail...
+     cilindrada varchar(10), 		-- //cilindrada do produto ex: 1650cc, 1200cc, 800cc, 
+     modelo varchar(30)		-- // modelo do produto ex: Fat bob, Tiger
+     valor double(50), 		-- // valor do produto
+     primary key (id)			-- // chave primaria do produto para encontra-lo na tabela.
+-- );
+
+ select*from produtos; -- // mostra a tabela
+
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Harley Davison", "Custom", "1650cc", "Strett Bob", 570.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Harley Davison", "Custom", "1500cc", "Fat Bob", 700.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Harley Davison", "Custom", "833cc", "Iron 883", 580.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Ducati", "Trail", "1200cc", "Multistrada", 950.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Ducati", "Esportiva","937cc"," Supersport S", 480.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Triumph", "Scrambler","1200cc"," 1200XC", 4500.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Triumph", "Boober", "900cc", "Bonneville T100", 1000.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Triumph", "Esportiva", "2.500cc", "Rocket 3R", 750.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Triumph", "Big Trail", "800cc", "Tiger", 2500.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Royal Enfield", "Off-Road", "400cc", "Himalayan", 500.00);
+ insert into produtos (marca, tipo, cilindrada, modelo, valor) values ("Mv Agusta", "Esportiva", "998cc", "Rush1000", 580.00);
+
+ select valor from produtos where valor>500; -- select que retorna os valores maiores que 500
+select valor from produtos where valor<500; -- select que retorna os valores menores que 500
+ select valor from produtos where valor<900 and valor >700; -- select que retorna os valores entre 700 e 900 
+
+ select*from produtos 
+ delete from produtos where id = 6
+
+ update produtos set valor = 500 where id = 3 

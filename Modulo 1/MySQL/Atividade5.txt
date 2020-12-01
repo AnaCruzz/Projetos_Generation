@@ -1,0 +1,42 @@
+-- create database escola -- // cria o database escola
+
+-- use escola; -- // comando para utilizar o database escola
+-- create table alunos ( -- // criando a tabela aluno
+	-- matricula int(5) auto_increment, --//matricula do aluno 
+   -- nome varchar(30),					-- // nome do aluno
+   -- nota float(5),					-- // nota do aluno
+   -- serie varchar(10),				-- // serie que o aluno estuda
+   -- ra varchar(5),					-- // ra do aluno
+   -- primary key(matricula)			-- // chave primaria determinando que matricula é a chave primaria do aluno
+-- ); -- fim do comando para criar a tabela
+
+-- select*from alunos -- para visualizar a tabela recem criada.
+
+-- insert into alunos (nome, nota, serie, ra) values ("Ana Carolina", 10.0, "9º série", "1254");
+-- insert into alunos (nome, nota, serie, ra) values ("João Vitor", 9.5, "9º série", "1265");
+-- insert into alunos (nome, nota, serie, ra) values ("Gerson Pedro", 8.0, "9º série", "1243");
+-- insert into alunos (nome, nota, serie, ra) values ("Maria Joana", 9.9, "9º série", "1235");
+-- insert into alunos (nome, nota, serie, ra) values ("Ana Clara", 4.5, "9º série", "1267");
+-- insert into alunos (nome, nota, serie, ra) values ("Andre Pedro", 7.9, "9º série", "1265");
+-- insert into alunos (nome, nota, serie, ra) values ("Maria Crivellaro", 7.8, "9º série", "1290");
+-- insert into alunos (nome, nota, serie, ra) values ("Eulina Feitosa", 6.3, "9º série", "1287");
+-- insert into alunos (nome, nota, serie, ra) values ("Rafael Antonio", 8.5, "8º série", "1133");
+-- insert into alunos (nome, nota, serie, ra) values ("João Pedro", 10.0, "9º série", "1233");
+-- insert into alunos (nome, nota, serie, ra) values ("Helena Maria", 5.8, "9º série", "1277");
+-- insert into alunos (nome, nota, serie, ra) values ("Catarina Medisse", 8.9, "8º série", "1154");
+-- insert into alunos (nome, nota, serie, ra) values ("Henrry ", 5.0, "8º série", "1135");
+-- insert into alunos (nome, nota, serie, ra) values ("Mariana JUlia Ito", 2.0, "8º série", "1190");
+-- insert into alunos (nome, nota, serie, ra) values ("Ella", 5.4, "8º série", "1123");
+-- insert into alunos (nome, nota, serie, ra) values ("Olivia Lima", 6.8, "8º série", "1123");
+-- insert into alunos (nome, nota, serie, ra) values ("Theodoro", 3.0, "8º série", "1111");
+-- insert into alunos (nome, nota, serie, ra) values ("Pedro Higino", 7.6, "9º série", "1299");
+-- insert into alunos (nome, nota, serie, ra) values ("Guisep Crivellaro", 9.4, "9º série", "1200");
+-- insert into alunos (nome, nota, serie, ra) values ("Hilda Verdeiro", 8.0, "9º série", "1222");
+
+-- select nome from alunos where nota>7; -- select que retorna os alunos com notas maiores que 7
+-- select nome from alunos where nota<7; -- select que retorna os alunos com notas menores que 7
+
+-- select*from alunos -- para identificar qual dado desejo deletar, no caso é a matricula 20.
+-- delete from alunos where matricula = 20;
+
+-- update alunos set nota = 5.0 where matricula = 12; -- atualizar a nota da matricula 12, de 1.8 para 5

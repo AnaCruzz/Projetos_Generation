@@ -1,0 +1,45 @@
+Atividade 1
+
+
+
+a)	Select – é  usado para selecionar tabelas ou campos específicos, para obter o valor inserido.
+
+
+b)	Insert – é usado para inserir dados dentro de uma tabela 
+
+
+
+c)	Update – é usado para atualizar dado dentro de uma tabela 
+
+
+d)	Delete – é usado para deletar dados de uma tabela.
+
+
+
+e)	Create Table – é usado para criar uma tabela no database.
+
+
+
+f)	Drop Table – é usado para deletar uma tabela existente.
+
+
+
+g)	Alter Table – é usado para modificar a estrutura de uma tabela.
+
+
+
+
+Atividade 2
+
+Informe pelo menos 5 tipagens utilizadas no Mysql e diga a sua equivalência em Java (ex: varchar = String)
+
+
+a)	int= int
+
+b)	bigint = long
+
+c)	boolean= boolean
+
+d)	double = double
+
+e)	float = float
